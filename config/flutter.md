@@ -38,7 +38,14 @@ storePassword=hunter2
 ./android/app/build.gradle
 ```
 ```groovy
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+   keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android{
+  // ...
   signingConfigs {
     release {
       keyAlias keystoreProperties['keyAlias']
@@ -47,10 +54,12 @@ android{
       storePassword keystoreProperties['storePassword']
     }
   }
+
   buildTypes {
     release {
       signingConfig signingConfigs.release
     }
   }
+  // ...
 }
 ```
