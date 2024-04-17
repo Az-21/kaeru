@@ -11,3 +11,13 @@ T[] array = new T[size];
 ```cs
 Array.Fill(array, value);
 ```
+
+## Sort One Array Based on Another
+```cs
+int[] x = [3, 2, 1];
+int[] y = [0, 10, 100];
+
+Array.Sort(x, y);
+# x = [1, 2, 3]
+# y = [100, 10, 0]
+```
