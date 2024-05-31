@@ -2,6 +2,10 @@
 // Fix choppy voice comms (receiver end)
 voice_scale 1
 
+// Sound
+volume 0.2
+snd_musicvolume 0.2
+
 // Hitsound
 tf_dingalingaling 1
 tf_dingaling_volume 0.8
@@ -14,6 +18,7 @@ tf_dingalingaling_lasthit 1
 tf_dingaling_lasthit_volume 0.8
 
 // General options
+sensitivity 1.1
 cl_autoreload 1
 cl_autorezoom 0
 hud_fastswitch 1
