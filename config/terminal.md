@@ -11,6 +11,8 @@ New-Alias vi nvim                 # NeoVim
 New-Alias vim nvim                # NeoVim
 New-Alias dl yt-dlp               # YouTube Downloader
 
+# Enable Starship.rs
+Invoke-Expression (&starship init powershell)
 ```
 
 ## Theme
