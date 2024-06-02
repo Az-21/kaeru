@@ -13,16 +13,6 @@ New-Alias dl yt-dlp               # YouTube Downloader
 
 ```
 
-## LazyVim
-```ps
-# Find for telescope
-winget install sharkdp.fd
-```
-```ps
-# C compiler for treesitter | Add to src
-https://github.com/mstorsjo/llvm-mingw/releases
-```
-
 ## Theme
 ```json
 {
