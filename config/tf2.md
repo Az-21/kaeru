@@ -1,44 +1,48 @@
 ```c
-// Fix choppy voice comms (receiver end)
-voice_scale 1
+/// Sound
+volume 0.2                                        // Game volume
+snd_musicvolume 0.2                               // Music volume
+voice_scale 1                                     // Fix choppy voice comms (receiver end)
 
-// Sound
-volume 0.2
-snd_musicvolume 0.2
+/// Damage
+hud_combattext_batching 1                         // Batch damage dealt for a time window
+hud_combattext_batching_window 2                  // Batch damage for 2 seconds
 
-// Hitsound
-tf_dingalingaling 1
-tf_dingaling_volume 0.8
-tf_dingalingaling_repeat_delay 0
-tf_dingaling_pitchmaxdmg 10
-tf_dingaling_pitchmindmg 240
+/// Viewmodel settings
+tf_use_min_viewmodels 1                           // Enable mini-viewmodels
+fov_desired 90                                    // Field of view
+viewmodel_fov 60                                  // Viewmodel field of view
 
-// Killsound
-tf_dingalingaling_lasthit 1
-tf_dingaling_lasthit_volume 0.8
+/// Hitsound
+tf_dingalingaling 1                               // Enable hitsound
+tf_dingaling_volume 0.8                           // Hitsound volume
+tf_dingalingaling_repeat_delay 0                  // Hitsound plays on every instance of damage
+tf_dingaling_pitchmaxdmg 10                       // Deeper bass on hig damage
+tf_dingaling_pitchmindmg 240                      // Tinny bass on low damage
 
-// General options
-sensitivity 1.1
-cl_autoreload 1
-cl_autorezoom 0
-hud_fastswitch 1
-tf_sniper_fullcharge_bell 1
-tf_medigun_autoheal 1
-hud_medichealtargetmarker 1
-hud_medicautocallers 1
-hud_medicautocallersthreshold 99
-pyro_vignette_distortion 0
-pyro_dof 0
-cl_spraydisable 0
-cl_cloud_settings 0
-hud_classautokill 0
+/// Killsound
+tf_dingalingaling_lasthit 1                       // Enable killsound
+tf_dingaling_lasthit_volume 0.8                   // Killsound volume
 
-// Batch damage for 2 seconds
-hud_combattext_batching 1
-hud_combattext_batching_window 2
+/// General options
+sensitivity 1.1                                   // Mouse sensitivity 
+cl_autoreload 1                                   // Autoreload after a delay
+hud_fastswitch 1                                  // Switch weapons instantly
+cl_spraydisable 0                                 // Enable sprays
+cl_cloud_settings 0                               // Don't sync settings to Steam Cloud
+hud_classautokill 0                               // Don't kill player for switching class outside spawn
 
-// Viewmodel settings
-tf_use_min_viewmodels 1
-fov_desired 90
-viewmodel_fov 60
+/// Sniper rifle
+cl_autorezoom 0                                   // Don't re-zoom sinper rifle after firing
+tf_sniper_fullcharge_bell 1                       // Play a sound cue to indicate sniper rifle is fully charged
+
+/// Medigun
+tf_medigun_autoheal 1                             // Continue healing without holding M1
+hud_medichealtargetmarker 1                       // Show details of healing target (name + health)
+hud_medicautocallers 1                            // Damaged players automatically call for medic
+hud_medicautocallersthreshold 99                  // Players below 99% health will automatically call for medic
+
+/// Pyroland
+pyro_vignette_distortion 0                        // Disable pyroland distortion
+pyro_dof 0                                        // Disable pyroland depth of field
 ```
