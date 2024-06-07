@@ -31,6 +31,7 @@ pyro_vignette_distortion 0
 pyro_dof 0
 cl_spraydisable 0
 cl_cloud_settings 0
+hud_classautokill 0
 
 // Batch damage for 2 seconds
 hud_combattext_batching 1
