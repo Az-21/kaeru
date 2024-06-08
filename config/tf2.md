@@ -38,7 +38,7 @@ tf_sniper_fullcharge_bell 1                       // Play a sound cue to indicat
 
 /// Medigun
 tf_medigun_autoheal 1                             // Continue healing without holding M1
-hud_medichealtargetmarker 1                       // Show '+' icon over players who need healing
+hud_medichealtargetmarker 1                       // Show '+' icon over players is being healed
 hud_medicautocallers 1                            // Damaged players automatically call for medic
 hud_medicautocallersthreshold 99                  // Players below 99% health will automatically call for medic
 
