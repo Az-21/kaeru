@@ -1,3 +1,4 @@
+```jsonc
 {
   // Theme
   "workbench.colorTheme": "Material Theme Ocean High Contrast",
@@ -83,3 +84,4 @@
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.editor.enableAutoCompletions": true
 }
+```
