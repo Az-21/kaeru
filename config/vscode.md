@@ -75,8 +75,6 @@
   "tinymist.preview.cursorIndicator": true,
   "tinymist.preview.invertColors": "auto",
   "tinymist.preview.refresh": "onSave",
-  "typst-lsp.exportPdf": "never",
-  "typst-lsp.trace.server": "messages",
 
   // Misc
   "cSpell.enableFiletypes": ["*"],
