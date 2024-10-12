@@ -45,4 +45,16 @@ hud_medicautocallersthreshold 99                  // Players below 99% health wi
 /// Pyroland
 pyro_vignette_distortion 0                        // Disable pyroland distortion
 pyro_dof 0                                        // Disable pyroland depth of field
+
+/// Keybinds
+bind ["cmd kill"
+bind ]"cmd explode"
+bind DEL"load_itempreset 0"
+bind RCTRL"load_itempreset 1"
+
+/// Crosshair
+cl_crosshaircolor 5
+cl_crosshair_red 81;cl_crosshair_green 255;cl_crosshair_blue 125;cl_crosshairalpha 255
+cl_crosshair_file""
+crosshair 1
 ```
