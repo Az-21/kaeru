@@ -6,7 +6,7 @@ voice_scale 1                                     // Fix choppy voice comms (rec
 
 /// Damage
 hud_combattext_batching 1                         // Batch damage dealt for a time window
-hud_combattext_batching_window 2                  // Batch damage for 2 seconds
+hud_combattext_batching_window 2                  // Wait for 2 seconds before creating a new batch
 
 /// Viewmodel settings
 tf_use_min_viewmodels 1                           // Enable mini-viewmodels
@@ -38,7 +38,7 @@ tf_sniper_fullcharge_bell 1                       // Play a sound cue to indicat
 
 /// Medigun
 tf_medigun_autoheal 1                             // Continue healing without holding M1
-hud_medichealtargetmarker 1                       // Show '+' icon over players is being healed
+hud_medichealtargetmarker 1                       // Show '▼' icon over players is being healed
 hud_medicautocallers 1                            // Damaged players automatically call for medic
 hud_medicautocallersthreshold 99                  // Players below 99% health will automatically call for medic
 
