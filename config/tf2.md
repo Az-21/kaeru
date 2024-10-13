@@ -47,10 +47,11 @@ pyro_vignette_distortion 0                        // Disable pyroland distortion
 pyro_dof 0                                        // Disable pyroland depth of field
 
 /// Keybinds
-bind ["cmd kill"
-bind ]"cmd explode"
-bind DEL"load_itempreset 0"
-bind RCTRL"load_itempreset 1"
+bind [ "cmd kill"
+bind ] "cmd explode"
+bind DEL "load_itempreset 0"
+bind RCTRL "load_itempreset 1"
+bind MOUSE3 "+use_action_slot_item"
 
 /// Crosshair
 cl_crosshaircolor 5
