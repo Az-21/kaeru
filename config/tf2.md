@@ -1,4 +1,6 @@
 ```c
+// Mastercomfig -> tf/cfg/overrides/autoexec.cfg
+
 /// Sound
 volume 0.2                                        // Game volume
 snd_musicvolume 0.2                               // Music volume
@@ -17,7 +19,7 @@ viewmodel_fov 60                                  // Viewmodel field of view
 tf_dingalingaling 1                               // Enable hitsound
 tf_dingaling_volume 0.8                           // Hitsound volume
 tf_dingalingaling_repeat_delay 0                  // Hitsound plays on every instance of damage
-tf_dingaling_pitchmaxdmg 10                       // Deeper bass on hig damage
+tf_dingaling_pitchmaxdmg 10                       // Deeper bass on high damage
 tf_dingaling_pitchmindmg 240                      // Tinny bass on low damage
 
 /// Killsound
