@@ -28,7 +28,7 @@ android:label="appname"
 ```
 ```r
 keyAlias=upload
-storeFile=key.jks
+storeFile=upload-key.jks
 keyPassword=hunter2
 storePassword=hunter2
 ```
