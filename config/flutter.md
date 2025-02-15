@@ -19,7 +19,7 @@ android:label="appname"
 
 ### Key
 ```ps
-./android/app/key.jks
+./android/app/upload-key.jks
 ```
 
 ### Key Properties
@@ -27,7 +27,7 @@ android:label="appname"
 ./android/key.properties
 ```
 ```r
-keyAlias=key
+keyAlias=upload
 storeFile=key.jks
 keyPassword=hunter2
 storePassword=hunter2
