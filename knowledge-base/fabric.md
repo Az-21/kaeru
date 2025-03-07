@@ -40,3 +40,9 @@ df: DataFrame = (
   .withColumn("SomeCol", F.when(F.col("ColName").contains("Lock"), "Private").otherwise("Public"))
 )
 ```
+
+### Save
+```py
+output_path: str = generate_lakehouse_path("fabric_TableName")
+aggregated_df.write.format("delta").mode("overwrite").save(output_path)
+```
