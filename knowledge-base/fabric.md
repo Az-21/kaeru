@@ -16,7 +16,6 @@ def generate_lakehouse_path(table_name: str) -> str:
 
 ### Table with Specific Columns
 ```py
-df_path: str = generate_lakehouse_path("sf_Opportunity")
 column_mapping: dict[str, str] = {
   "SomeColumn": "SomeColumn",
   "SomeOther__c": "SomeOtherColumn",
@@ -24,7 +23,7 @@ column_mapping: dict[str, str] = {
 
 df: DataFrame = (
   spark.read.format("delta")
-  .load(df_path)
+  .load(generate_lakehouse_path("table_name"))
   .select(*column_mapping.keys())
   .select(*[F.col(old_name).alias(new_name) for old_name, new_name in column_mapping.items()])
 )
