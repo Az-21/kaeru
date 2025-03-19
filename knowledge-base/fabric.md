@@ -27,6 +27,12 @@ df: DataFrame = (
   .select(*column_mapping.keys())
   .select(*[F.col(old_name).alias(new_name) for old_name, new_name in column_mapping.items()])
 )
+
+if df.isEmpty():
+  raise Exception("The table is being updated. Please try again later")
+
+if DEBUG:
+  display(df)
 ```
 
 ### Transform
