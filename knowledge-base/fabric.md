@@ -46,6 +46,18 @@ df: DataFrame = (
 )
 ```
 
+### Aggregate
+```py
+df: DataFrame = (
+  df
+  .groupBy("Category", "FiscalYear")
+  .agg(
+    F.round(F.sum("Revenue"), 2).alias("TotalRevenue"),
+    F.count("*").alias("Count")
+  )
+)
+```
+
 ### Save
 ```py
 output_path: str = generate_lakehouse_path("fabric_TableName")
