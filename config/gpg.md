@@ -7,6 +7,12 @@ gpg --full-generate-key
 > [!TIP]
 > Use the name on GitHub and the `@noreply` email provided by GitHub
 
+> [!TIP]
+> Try the following command when key generation fails due to "no GPG agent running"
+> ```sh
+> gpg-connect-agent reloadagent /bye
+> ```
+
 ### Get Keys
 ```sh
 gpg --list-secret-keys --keyid-format=long
