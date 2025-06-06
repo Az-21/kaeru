@@ -5,13 +5,14 @@ gpg --full-generate-key
 ```
 
 > [!TIP]
-> Use the name on GitHub and the `@noreply` email provided by GitHub
+> For privacy, use the name on GitHub and the `@noreply` email provided by GitHub
 
-> [!TIP]
+> [!NOTE]
 > Try the following command when key generation fails due to "no GPG agent running"
 > ```sh
 > gpg-connect-agent reloadagent /bye
 > ```
+> If this fails, run and close Kleopatra
 
 ### Get Keys
 ```sh
