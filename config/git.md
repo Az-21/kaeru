@@ -1,3 +1,4 @@
+# Initial Setup
 ## Local Project Config
 ```sh
 git config user.name "John Doe"
@@ -21,4 +22,19 @@ git config --global commit.gpgsign true
 ```sh
 git config --get user.email
 git config --get --global user.email
+```
+
+# Tracking Modifiers
+## Ignore Locally
+- Ignore locally without chaning `.gitignore` file.
+- Useful when some files start showing up due to modified whitespace.
+- Also useful for config files.
+
+```sh
+# Ignore locally
+git update-index --assume-unchanged <file/folder>
+```
+```sh
+# Start tracking again
+git update-index --no-assume-unchanged <file/folder>
 ```
