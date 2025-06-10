@@ -38,3 +38,9 @@ git update-index --assume-unchanged <file/folder>
 # Start tracking again
 git update-index --no-assume-unchanged <file/folder>
 ```
+
+# Uses
+## Diff Since Creation of Branch
+```sh
+git --no-pager diff --unified=0 main...HEAD
+```
