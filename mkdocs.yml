@@ -48,7 +48,6 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
-    - navigation.sections
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -61,7 +60,6 @@ theme:
 
 plugins:
   - search
-  - social
   - git-revision-date-localized:
       enable_creation_date: true
 
