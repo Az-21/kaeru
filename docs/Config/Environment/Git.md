@@ -7,10 +7,10 @@ git config user.email "john.doe@domain.com"
 git config user.signingkey A000000000000000
 ```
 
-> [!NOTE]
-> GitHub enables a private email to hide your email. Prefer to use that email to hide your real email.
->
-> It can be found in Settings > Emails.
+!!! note
+    GitHub enables a private email to hide your email. Prefer to use that email to hide your real email.
+
+    It can be found in Settings > Emails.
 
 ### Global Project Config
 ```sh

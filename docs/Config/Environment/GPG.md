@@ -5,15 +5,15 @@
 gpg --full-generate-key
 ```
 
-> [!TIP]
-> For privacy, use the name on GitHub and the `@noreply` email provided by GitHub
+!!! tip
+    For privacy, use the name on GitHub and the `@noreply` email provided by GitHub
 
-> [!NOTE]
-> Try the following command when key generation fails due to "no GPG agent running"
-> ```sh
-> gpg-connect-agent reloadagent /bye
-> ```
-> If this fails, run and close Kleopatra
+!!! note
+    Try the following command when key generation fails due to "no GPG agent running"
+    ```sh
+    gpg-connect-agent reloadagent /bye
+    ```
+    If this fails, run and close Kleopatra
 
 ### Get Keys
 ```sh
@@ -50,8 +50,8 @@ gpg --export --armor λ > GitHub-CommitSigningKey-Public.asc
 gpg --export-secret-keys --armor λ > GitHub-CommitSigningKey-Private.asc
 ```
 
-> [!NOTE]
-> The exported secret key is still secure. It will require password (passphrase) before it can be imported and used.
+!!! note
+    The exported secret key is still secure. It will require password (passphrase) before it can be imported and used.
 
 ### Import
 ```sh

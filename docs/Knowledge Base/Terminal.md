@@ -5,8 +5,8 @@
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";full/path/here", [System.EnvironmentVariableTarget]::User)
 ```
 
-> [!NOTE]
-> Semicolon before full path is required.
+!!! danger
+    Semicolon before full path is required.
 
 ### Add to System PATH
 This requires elevated shell.
