@@ -1,3 +1,4 @@
+# Terminal
 ## PATH
 ### Add to User PATH
 ```ps

@@ -1,7 +1,7 @@
-# MBR FAT32
+# MBR Disk Format
 
-> [!TIP]
-> Useful when flashing firmware on _dumb_ devices.
+!!! tip
+    Useful when flashing firmware on _dumb_ devices.
 
 ## Start Diskpart Utility
 ```cmd
@@ -30,7 +30,7 @@ list disk
 
 > [!CAUTION]
 > Double check the disk you're working on.
-> 
+>
 > **You will brick your device if you select the disk where OS is installed.**
 
 ```cmd

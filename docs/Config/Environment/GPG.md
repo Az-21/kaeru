@@ -1,4 +1,5 @@
-# Generation
+# GPG
+## Generation
 ### Generate Key
 ```sh
 gpg --full-generate-key
@@ -26,7 +27,7 @@ sec   rsa4096/1XX1X11111000XX0 2016-07-01 [SC]
 uid                 [ultimate] Octocat <octocat@github.com>
 ```
 
-# Usage
+## Usage
 ### Sign Commits
 ```sh
 git config --global user.signingkey λ
@@ -42,7 +43,7 @@ gpg --export --armor λ | Set-Clipboard
 gpg --export --armor λ | pbcopy
 ```
 
-# Backup
+## Backup
 ### Create Backup
 ```
 gpg --export --armor λ > GitHub-CommitSigningKey-Public.asc

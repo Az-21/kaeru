@@ -1,4 +1,10 @@
-# PowerShell Profile
+# Windows
+## Initial Setup
+```powershell
+winget upgrade --all
+```
+
+## PowerShell Profile
 ```powershell
 # Create and open PS profile
 code $PROFILE
@@ -16,9 +22,4 @@ New-Alias dl yt-dlp               # YouTube Downloader
 
 # Enable Starship.rs
 Invoke-Expression (&starship init powershell)
-```
-
-# Bash Profile
-```sh
-eval "$(starship init bash)"
 ```

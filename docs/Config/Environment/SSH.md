@@ -1,4 +1,5 @@
-# Setting Up Multiple Git Accounts
+# SSH
+## Setting Up Multiple Git Accounts
 ## Key Generation
 ### SSH Directory / Workspace
 ```sh
