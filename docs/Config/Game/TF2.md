@@ -1,3 +1,4 @@
+# Team Fortress 2
 ```c
 // Mastercomfig -> tf/cfg/overrides/autoexec.cfg
 
@@ -27,7 +28,7 @@ tf_dingalingaling_lasthit 1                       // Enable killsound
 tf_dingaling_lasthit_volume 0.8                   // Killsound volume
 
 /// General options
-sensitivity 1.1                                   // Mouse sensitivity 
+sensitivity 1.1                                   // Mouse sensitivity
 cl_autoreload 1                                   // Autoreload after a delay
 hud_fastswitch 1                                  // Switch weapons instantly
 cl_spraydisable 0                                 // Enable sprays

@@ -1,9 +1,8 @@
+# Fabric
 ### Starter Template
 ```py
 from pyspark.sql import SparkSession, Row, DataFrame, functions as F
 from pyspark.errors import AnalysisException
-spark = SparkSession.builder.appName("Name").getOrCreate()
-
 
 DEBUG: bool = True
 ```

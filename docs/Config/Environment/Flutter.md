@@ -4,8 +4,8 @@
 flutter create --platforms=android,windows --org az21 appname
 ```
 
-> [!WARNING]
-> Don't use uppercase char in organization name or app name.
+!!! warning
+    Don't use uppercase char in organization name or app name.
 
 ### App Name
 ```ps
