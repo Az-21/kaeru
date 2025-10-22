@@ -9,6 +9,9 @@ sudo apt install curl wget git
 
 # Starship.rs
 curl -sS https://starship.rs/install.sh | sh
+
+# Python -> uv package manager
+wget -qO- https://astral.sh/uv/install.sh | sh
 ```
 
 ## Bash Profile
