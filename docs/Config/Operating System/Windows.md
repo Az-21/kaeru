@@ -2,6 +2,8 @@
 ## Initial Setup
 ```powershell
 winget upgrade --all
+
+winget install Microsoft.PowerToys Microsoft.PowerShell Starship.Starship Valve.Steam Typst.Typst Git.Git GitHub.GitHubDesktop Neovim.Neovim Microsoft.VisualStudio.2022.Community Microsoft.VisualStudioCode CoreyButler.NVMforWindows astral-sh.uv M2Team.NanaZip
 ```
 
 ## PowerShell Profile
@@ -18,7 +20,6 @@ New-Alias touch New-Item          # Create new, empty file
 # Alias third party tools and commands
 New-Alias vi nvim                 # NeoVim
 New-Alias vim nvim                # NeoVim
-New-Alias dl yt-dlp               # YouTube Downloader
 
 # Enable Starship.rs
 Invoke-Expression (&starship init powershell)
