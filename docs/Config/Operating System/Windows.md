@@ -6,7 +6,6 @@ winget upgrade --all
 
 ```powershell
 winget install `
-  CoreyButler.NVMforWindows `
   Git.Git `
   GitHub.GitHubDesktop `
   M2Team.NanaZip `
@@ -19,6 +18,7 @@ winget install `
   Typst.Typst `
   Valve.Steam `
   astral-sh.uv `
+  jdx.mise `
 ```
 
 [Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
