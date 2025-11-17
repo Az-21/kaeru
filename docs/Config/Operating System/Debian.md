@@ -5,7 +5,9 @@ sudo apt update
 sudo apt upgrade
 
 # Dependencies
-sudo apt install curl wget git
+sudo apt install \
+  wget \
+  git \
 
 # Starship.rs
 curl -sS https://starship.rs/install.sh | sh

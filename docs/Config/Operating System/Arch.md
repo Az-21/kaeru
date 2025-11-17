@@ -1,19 +1,26 @@
 # Arch
 ## Initial Setup
 ```bash
-pacman -Syu
+sudo pacman -Syu
 
 # Install yay
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 ```
 
 ```bash
-# Upgrade all
-yay
+yay -S \
+  fzf \
+  ghostty \
+  github-desktop-bin \
+  microsoft-edge-stable-bin \
+  mise \
+  starship \
+  uv \
+  visual-studio-code-bin \
+  zoxide \
+```
 
-# Install
-yay -S uv starship mise
-
+```bash
 # Cleanup
 yay -Yc
 ```
