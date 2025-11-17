@@ -1,10 +1,15 @@
 site_name: Kaeru
+repo_url: https://github.com/Az-21/kaeru
+repo_name: Az-21/kaeru
+edit_uri: edit/main/docs/
+
 theme:
   name: material
 
   icon:
     repo: simple/github
-    view: material/language-markdown-outline
+    edit: material/circle-edit-outline
+    view: material/text-box
 
   palette:
   - media: "(prefers-color-scheme)"
@@ -31,7 +36,10 @@ theme:
     code: JetBrains Mono
 
   features:
+    - content.action.edit
     - content.action.view
+    - content.code.annotate
+    - content.code.copy
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
@@ -43,8 +51,6 @@ theme:
     - search.suggest
     - toc.follow
     - toc.integrate
-    - content.code.copy
-    - content.code.annotate
 
 plugins:
   - search
@@ -71,6 +77,3 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
 
-repo_url: https://github.com/Az-21/kaeru
-repo_name: Az-21/kaeru
-edit_uri: edit/main/docs/
