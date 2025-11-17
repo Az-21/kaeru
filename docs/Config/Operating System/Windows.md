@@ -17,8 +17,10 @@ winget install `
   Starship.Starship `
   Typst.Typst `
   Valve.Steam `
+  ajeetdsouza.zoxide `
   astral-sh.uv `
   jdx.mise `
+  junegunn.fzf `
 ```
 
 [Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
