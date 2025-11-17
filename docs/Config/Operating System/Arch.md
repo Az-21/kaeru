@@ -17,3 +17,5 @@ yay -S uv starship mise
 # Cleanup
 yay -Yc
 ```
+
+[Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
