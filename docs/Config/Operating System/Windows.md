@@ -11,16 +11,26 @@ winget install `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
-  Microsoft.VisualStudio.2022.Community `
+  Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
-  Neovim.Neovim `
   Starship.Starship `
   Typst.Typst `
   Valve.Steam `
-  ajeetdsouza.zoxide `
+  Neovim.Neovim `
   astral-sh.uv `
-  jdx.mise `
+  ajeetdsouza.zoxide `
   junegunn.fzf `
+  wez.wezterm `
+  sharkdp.bat `
+  ajeetdsouza.zoxide `
+  eza-community.eza `
+  sharkdp.fd `
+  sxyazi.yazi `
+  stedolan.jq `
+  Atuinsh.Atuin `
+  tbillington.kondo `
+  Schniz.fnm `
+  BurntSushi.ripgrep.MSVC
 ```
 
 [Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
