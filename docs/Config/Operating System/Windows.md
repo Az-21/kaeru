@@ -17,6 +17,7 @@ winget install `
   Typst.Typst `
   Valve.Steam `
   Neovim.Neovim `
+  ZedIndustries.Zed `
   astral-sh.uv `
   ajeetdsouza.zoxide `
   junegunn.fzf `
