@@ -1,73 +1,84 @@
 ---
-icon: lucide/shield-check
+icon: material/shield-key
 ---
+
 # SSH
-## Setting Up Multiple Git Accounts
+
 ## Key Generation
-### SSH Directory / Workspace
-```sh
-# Create SSH workspace
-cd ~ # Equivalent to current user in Windows
-mkdir .ssh
-cd .ssh
+
+```bash title="Generate a secure key"
+ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519_personal
+#          -t algo    -C comment (email)          -f filename
 ```
 
-### SSH Key Generation
-```sh
-# Create SSH key
-ssh-keygen - t ed25519 -C "email@domain.com" -f "output-key-name"
+## Global Git Configuration
+
+Organize your projects into subdirectories (e.g., `~/dev/personal` and `~/dev/work`) to trigger automatic identity switching.
+
+```bash title="Prepare configuration directory"
+mkdir --parents ~/.config/git/
 ```
 
-### SSH Config
-```sh
-# Create config file
-touch config
-```
-```
-# ~/.ssh/config
+### The Master Config (`~/.gitconfig`)
+```ini title="~/.gitconfig"
+[user]
+    name = Default User
+    email = default@email.com
 
-# Git Account #1
-Host github.com-personal
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/account-1-key
+[includeIf "gitdir:~/dev/personal/"]
+    path = ~/.config/git/personal.gitconfig
 
-# Git Account #2
-Host github.com-work
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/account-2-key
+[includeIf "gitdir:~/dev/work/"]
+    path = ~/.config/git/work.gitconfig
+
+[includeIf "gitdir:C:/dev/personal/"]
+    path = ~/.config/git/personal.gitconfig
 ```
 
-### Known Host
-```
-# Create known host file
-touch known_hosts
-```
-```
-# ~/.ssh/known_hosts
-# Add known hosts here
-```
+## Environment Overrides
 
-- Google XYZ's SSH key fingerprints to get public key fingerprints
-- GitHub: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+The files inside `~/.config/git/` will override your global settings automatically.
 
-## Clone
-```sh
-# Normal SSH clone
-git clone git@github.com:Az-21/kaeru.git
+=== "Personal (`~/.config/git/personal.gitconfig`)"
 
-# Profile/account specific clone
-git clone git@github.com-personal:Az-21/kaeru.git
-#                        ^ This will configure with personal profile (account#1)
+    ```ini
+    [user]
+        name = Personal Alias
+        email = personal@email.com
+        signingkey = ~/.ssh/id_ed25519_personal.pub
+    [commit]
+        gpgsign = true
+    [gpg]
+        format = ssh
+    [core]
+        sshCommand = "ssh -i ~/.ssh/id_ed25519_personal"
+    ```
 
-git clone git@github.com-work:Az-21/kaeru.git
-#                        ^ This will configure with work profile (account#2)
-```
+=== "Work (`~/.config/git/work.gitconfig`)"
 
-### Username and Email
-```sh
-cd <repo>
-git config user.name "username"
-git config user.email "email@domain.com" # Consider using email alias (GitHub: Setting > Access > Emails)
+    ```ini
+    [user]
+        name = Real Name
+        email = employee@company.com
+        signingkey = ~/.ssh/id_ed25519_work.pub
+    [commit]
+        gpgsign = true
+    [gpg]
+        format = ssh
+    [core]
+        sshCommand = "ssh -i ~/.ssh/id_ed25519_work"
+    ```
+
+## Verification
+
+```bash title="Testing the setup"
+cd ~/dev/work/my-project
+
+# Verify identity
+git config --get user.email
+# Output: employee@company.com
+
+# Verify SSH key usage
+ssh -T git@github.com
+# Output: Hi user! You've successfully authenticated...
 ```
