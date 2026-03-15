@@ -1,3 +1,6 @@
+---
+icon: lucide/git-branch
+---
 # Git
 ## Initial Setup
 ### Local Project Config

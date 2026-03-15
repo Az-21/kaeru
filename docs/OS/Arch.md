@@ -1,3 +1,6 @@
+---
+icon: lucide/terminal
+---
 # Arch
 ## Initial Setup
 ```bash

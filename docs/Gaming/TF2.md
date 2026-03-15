@@ -1,3 +1,6 @@
+---
+icon: lucide/gamepad-2
+---
 # Team Fortress 2
 ```c
 // Mastercomfig -> tf/cfg/overrides/autoexec.cfg

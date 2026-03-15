@@ -1,3 +1,6 @@
+---
+icon: lucide/globe
+---
 # Internet Knowledge Base
 
 ## YouTube

@@ -1,3 +1,6 @@
+---
+icon: lucide/key-round
+---
 # GPG
 ## Generation
 ### Generate Key

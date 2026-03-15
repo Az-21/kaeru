@@ -1,3 +1,6 @@
+---
+icon: lucide/terminal
+---
 # Debian
 ## Initial Setup
 ```bash

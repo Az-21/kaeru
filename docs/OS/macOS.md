@@ -1,3 +1,6 @@
+---
+icon: lucide/apple
+---
 # macOS
 ## Initial Setup
 ```zsh

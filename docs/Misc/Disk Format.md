@@ -1,3 +1,6 @@
+---
+icon: lucide/hard-drive
+---
 # MBR Disk Format
 
 !!! tip

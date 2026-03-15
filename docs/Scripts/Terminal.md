@@ -1,3 +1,6 @@
+---
+icon: lucide/terminal
+---
 # Terminal
 ## PATH
 ### Add to User PATH

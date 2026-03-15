@@ -1,3 +1,6 @@
+---
+icon: lucide/monitor
+---
 # Windows
 ## Initial Setup
 ```powershell

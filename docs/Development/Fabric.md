@@ -1,3 +1,6 @@
+---
+icon: lucide/database
+---
 # Fabric
 ### Starter Template
 ```py

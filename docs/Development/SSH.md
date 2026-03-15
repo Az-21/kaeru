@@ -1,3 +1,6 @@
+---
+icon: lucide/shield-check
+---
 # SSH
 ## Setting Up Multiple Git Accounts
 ## Key Generation

@@ -1,3 +1,6 @@
+---
+icon: lucide/smartphone
+---
 # Flutter
 ## Initialize
 ```ps

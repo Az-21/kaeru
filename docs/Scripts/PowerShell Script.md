@@ -1,3 +1,6 @@
+---
+icon: lucide/scroll-text
+---
 # Scripts
 ## Move
 ### Move Files One Level Up
