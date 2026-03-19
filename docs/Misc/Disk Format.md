@@ -36,7 +36,7 @@ list disk
 ## Convert to MBR Partition and Format as FAT32
 
 !!! danger
-    
+
     Double check the disk you're working on.
 
     **You will brick your device if you select the disk where OS is installed.**
