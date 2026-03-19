@@ -14,6 +14,7 @@ icon: lucide/apple
 ```zsh
 brew install \
   bat \
+  chezmoi \
   eza \
   fd \
   fnm \
@@ -27,7 +28,9 @@ brew install \
   typst \
   uv \
   yazi \
-  zoxide
+  zoxide \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting
 
 brew install --cask \
   github \
