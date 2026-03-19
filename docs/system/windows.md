@@ -12,32 +12,32 @@ winget upgrade --all
 
 ```powershell
 winget install `
+  ajeetdsouza.zoxide `
+  ajeetdsouza.zoxide `
+  astral-sh.uv `
+  Atuinsh.Atuin `
+  BurntSushi.ripgrep.MSVC `
+  eza-community.eza `
   Git.Git `
   GitHub.GitHubDesktop `
+  junegunn.fzf `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
   Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
+  Neovim.Neovim `
+  Schniz.fnm `
+  sharkdp.bat `
+  sharkdp.fd `
   Starship.Starship `
+  stedolan.jq `
+  sxyazi.yazi `
+  tbillington.kondo `
   Typst.Typst `
   Valve.Steam `
-  Neovim.Neovim `
-  ZedIndustries.Zed `
-  astral-sh.uv `
-  ajeetdsouza.zoxide `
-  junegunn.fzf `
   wez.wezterm `
-  sharkdp.bat `
-  ajeetdsouza.zoxide `
-  eza-community.eza `
-  sharkdp.fd `
-  sxyazi.yazi `
-  stedolan.jq `
-  Atuinsh.Atuin `
-  tbillington.kondo `
-  Schniz.fnm `
-  BurntSushi.ripgrep.MSVC
+  ZedIndustries.Zed
 ```
 
 ## WSL
