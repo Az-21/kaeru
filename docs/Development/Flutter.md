@@ -1,19 +1,25 @@
 ---
 icon: lucide/smartphone
 ---
+
 # Flutter
+
 ## Initialize
-```ps
+
+```powershell
 flutter create --platforms=android,windows --org az21 appname
 ```
 
 !!! warning
+
     Don't use uppercase char in organization name or app name.
 
 ### App Name
-```ps
+
+```powershell
 ./android/app/src/main/AndroidManifest.xml
 ```
+
 ```r
 android:label="appname"
 ```
@@ -21,14 +27,17 @@ android:label="appname"
 ## App Signature
 
 ### Key
-```ps
+
+```powershell
 ./android/app/upload-key.jks
 ```
 
 ### Key Properties
-```ps
+
+```powershell
 ./android/key.properties
 ```
+
 ```r
 keyAlias=upload
 storeFile=upload-key.jks
@@ -37,9 +46,11 @@ storePassword=hunter2
 ```
 
 ### Gradle Config
-```ps
+
+```powershell
 ./android/app/build.gradle
 ```
+
 ```groovy
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('key.properties')

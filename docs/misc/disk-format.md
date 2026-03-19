@@ -1,12 +1,15 @@
 ---
 icon: lucide/hard-drive
 ---
+
 # MBR Disk Format
 
 !!! tip
+
     Useful when flashing firmware on _dumb_ devices.
 
 ## Start Diskpart Utility
+
 ```cmd
 ::# PowerShell or CMD
 diskpart
@@ -27,11 +30,13 @@ list disk
 ```
 
 !!! tip
+
     If you don't see a `*` against your USB device (flashdrive/pendrive) under "Gpt" column, it is most likey already using MBR partition. You can use this again to verify if the formatting was successful.
 
 ## Convert to MBR Partition and Format as FAT32
 
 !!! danger
+
     Double check the disk you're working on.
 
     **You will brick your device if you select the disk where OS is installed.**

@@ -1,47 +1,52 @@
 ---
 icon: lucide/monitor
 ---
+
 # Windows
+
 ## Initial Setup
+
 ```powershell
 winget upgrade --all
 ```
 
 ```powershell
 winget install `
+  ajeetdsouza.zoxide `
+  ajeetdsouza.zoxide `
+  astral-sh.uv `
+  Atuinsh.Atuin `
+  BurntSushi.ripgrep.MSVC `
+  eza-community.eza `
   Git.Git `
   GitHub.GitHubDesktop `
+  junegunn.fzf `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
   Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
+  Neovim.Neovim `
+  Schniz.fnm `
+  sharkdp.bat `
+  sharkdp.fd `
   Starship.Starship `
+  stedolan.jq `
+  sxyazi.yazi `
+  tbillington.kondo `
+  twpayne.chezmoi `
   Typst.Typst `
   Valve.Steam `
-  Neovim.Neovim `
-  ZedIndustries.Zed `
-  astral-sh.uv `
-  ajeetdsouza.zoxide `
-  junegunn.fzf `
   wez.wezterm `
-  sharkdp.bat `
-  ajeetdsouza.zoxide `
-  eza-community.eza `
-  sharkdp.fd `
-  sxyazi.yazi `
-  stedolan.jq `
-  Atuinsh.Atuin `
-  tbillington.kondo `
-  Schniz.fnm `
-  BurntSushi.ripgrep.MSVC
+  ZedIndustries.Zed
 ```
 
-[Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
-
 ## WSL
+
 ### GitHub Desktop
+
 Use this as the local path when cloning a repo.
+
 ```bash
 # \\wsl.localhost\{DISTRO}\home\{User}\Code\{Orgnization}\{Repo}
 \\wsl.localhost\Debian\home\Az21\Code\Az-21\{Repo}
