@@ -34,6 +34,7 @@ winget install `
   stedolan.jq `
   sxyazi.yazi `
   tbillington.kondo `
+  twpayne.chezmoi `
   Typst.Typst `
   Valve.Steam `
   wez.wezterm `
