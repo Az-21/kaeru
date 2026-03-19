@@ -20,6 +20,7 @@ mkdir --parents ~/.config/git/
 ```
 
 ### The Master Config (`~/.gitconfig`)
+
 ```ini title="~/.gitconfig"
 [user]
     name = Default User

@@ -1,8 +1,11 @@
 ---
 icon: lucide/monitor
 ---
+
 # Windows
+
 ## Initial Setup
+
 ```powershell
 winget upgrade --all
 ```
@@ -37,11 +40,12 @@ winget install `
   BurntSushi.ripgrep.MSVC
 ```
 
-[Get Dotfiles](https://github.com/Az-21/dotfiles){ .md-button .md-button--primary }
-
 ## WSL
+
 ### GitHub Desktop
+
 Use this as the local path when cloning a repo.
+
 ```bash
 # \\wsl.localhost\{DISTRO}\home\{User}\Code\{Orgnization}\{Repo}
 \\wsl.localhost\Debian\home\Az21\Code\Az-21\{Repo}
