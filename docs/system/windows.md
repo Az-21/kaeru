@@ -13,7 +13,6 @@ winget upgrade --all
 ```powershell
 winget install `
   ajeetdsouza.zoxide `
-  ajeetdsouza.zoxide `
   astral-sh.uv `
   Atuinsh.Atuin `
   BurntSushi.ripgrep.MSVC `
@@ -31,12 +30,11 @@ winget install `
   sharkdp.bat `
   sharkdp.fd `
   Starship.Starship `
-  stedolan.jq `
+  jqlang.jq `
   sxyazi.yazi `
   tbillington.kondo `
   twpayne.chezmoi `
   Typst.Typst `
-  Valve.Steam `
   wez.wezterm `
   ZedIndustries.Zed
 ```
