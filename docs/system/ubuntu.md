@@ -38,6 +38,9 @@ curl -f https://zed.dev/install.sh | sh
 # VS Code Editor
 sudo snap install code --classic
 
+# Proton Pass CLI
+curl -fsSL https://proton.me/download/pass-cli/install.sh | bash
+
 # Switch to new soruce list format
 sudo apt modernize-sources
 ```
