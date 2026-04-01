@@ -35,6 +35,11 @@ sudo nala update && sudo nala install wezterm
 # Zsh Code Editor
 curl -f https://zed.dev/install.sh | sh
 
+# GitHub Desktop Plus
+sudo curl https://gpg.polrivero.com/public.key | sudo gpg --dearmor -o /usr/share/keyrings/polrivero.gpg
+echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/polrivero.gpg] https://deb.github-desktop.polrivero.com/ stable main" | sudo tee /etc/apt/sources.list.d/github-desktop-plus.list
+sudo nala update && sudo nala install github-desktop-plus
+
 # VS Code Editor
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
@@ -45,10 +50,21 @@ sudo apt modernize-sources
 ```
 
 ```zsh
-sudo nala update && sudo nala upgrade && mise upgrade
+sudo nala update && sudo nala upgrade && sudo nala autoremove && mise upgrade
 ```
+
+## Dotfiles
+
+```zsh
+mise use -g chezmoi@latest
+chezmoi init Az-21
+chezmoi apply
+mise upgrade
+```
+
 ## Sane Configs
-```
+
+```zsh
 # Center dock icons and trim for a macOS like dock
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ```
