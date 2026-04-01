@@ -178,7 +178,7 @@ features = [
 [project.theme.icon]
 edit = "lucide/pencil"
 logo = "lucide/atom"
-repo = "lucide/github"
+repo = "simple/git"
 
 [project.theme.icon.admonition]
 abstract = "lucide/notebook-text"
