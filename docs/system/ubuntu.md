@@ -27,19 +27,17 @@ echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.asc] https://mise.jd
 sudo nala update && sudo nala install mise
 
 # Wezterm
-curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
-echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
-sudo chmod 644 /usr/share/keyrings/wezterm-fury.gpg
+curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /etc/apt/keyrings/wezterm.gpg
+echo 'deb [signed-by=/etc/apt/keyrings/wezterm.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
 sudo nala update && sudo nala install wezterm
 
 # Zsh Code Editor
 curl -f https://zed.dev/install.sh | sh
 
 # VS Code Editor
-sudo snap install code --classic
-
-# Proton Pass CLI
-curl -fsSL https://proton.me/download/pass-cli/install.sh | bash
+curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo nala update && sudo nala install code
 
 # Switch to new soruce list format
 sudo apt modernize-sources
