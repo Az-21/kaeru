@@ -67,4 +67,7 @@ mise upgrade
 ```zsh
 # Center dock icons and trim for a macOS like dock
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+
+# Make zsh default
+chsh -s $(which zsh)
 ```
