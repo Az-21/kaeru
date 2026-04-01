@@ -1,5 +1,5 @@
 ---
-icon: lucide/apple
+icon: simple/apple
 ---
 
 # macOS
@@ -7,39 +7,36 @@ icon: lucide/apple
 ## Initial Setup
 
 ```zsh
-# Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ```zsh
 brew install \
-  bat \
-  chezmoi \
-  eza \
-  fd \
   fnm \
-  fzf \
   git \
-  jq \
-  kondo \
-  neovim \
-  ripgrep \
-  starship \
-  typst \
-  uv \
-  yazi \
-  zoxide \
+  mise \
   zsh-autosuggestions \
   zsh-syntax-highlighting
 
 brew install --cask \
-  github \
   steam \
   visual-studio-code \
   wezterm \
   zed
+
+brew install \
+  pol-rivero/tap/github-desktop-plus
 ```
 
 ```zsh
-brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cleanup
+brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cleanup && mise upgrade
+```
+
+## Dotfiles
+
+```zsh
+mise use -g chezmoi@latest
+chezmoi init Az-21
+chezmoi apply
+mise upgrade
 ```
