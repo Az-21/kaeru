@@ -25,6 +25,19 @@ winget install `
   wez.wezterm
 ```
 
+## SSH Setup
+
+```powershell
+# Run on startup
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+
+# Start in current run (one-time, won't need after restarting once)
+Start-Service ssh-agent
+
+# Verify
+Get-Service ssh-agent
+```
+
 ## WSL
 
 ### GitHub Desktop
