@@ -12,31 +12,17 @@ winget upgrade --all
 
 ```powershell
 winget install `
-  ajeetdsouza.zoxide `
-  astral-sh.uv `
-  Atuinsh.Atuin `
-  BurntSushi.ripgrep.MSVC `
-  eza-community.eza `
   Git.Git `
   GitHub.GitHubDesktop `
-  junegunn.fzf `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
   Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
-  Neovim.Neovim `
   Schniz.fnm `
-  sharkdp.bat `
-  sharkdp.fd `
-  Starship.Starship `
-  jqlang.jq `
-  sxyazi.yazi `
-  tbillington.kondo `
-  twpayne.chezmoi `
-  Typst.Typst `
-  wez.wezterm `
   ZedIndustries.Zed
+  jdx.mise `
+  wez.wezterm
 ```
 
 ## WSL
