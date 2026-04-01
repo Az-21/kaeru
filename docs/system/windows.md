@@ -13,16 +13,29 @@ winget upgrade --all
 ```powershell
 winget install `
   Git.Git `
-  GitHub.GitHubDesktop `
+  jdx.mise `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
   Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
+  polrivero.GitHubDesktopPlus `
   Schniz.fnm `
+  wez.wezterm `
   ZedIndustries.Zed
-  jdx.mise `
-  wez.wezterm
+```
+
+```powershell
+winget upgrade --all && mise upgrade
+```
+
+## Dotfiles
+
+```powershell
+mise use -g chezmoi@latest
+chezmoi init Az-21
+chezmoi apply
+mise upgrade
 ```
 
 ## SSH Setup
