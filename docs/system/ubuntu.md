@@ -15,6 +15,7 @@ sudo nala install \
   curl \
   git \
   unzip \
+  variety \
   wget \
   zsh \
   zsh-autosuggestions \
@@ -45,4 +46,9 @@ sudo apt modernize-sources
 
 ```zsh
 sudo nala update && sudo nala upgrade && mise upgrade
+```
+## Sane Configs
+```
+# Center dock icons and trim for a macOS like dock
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ```
