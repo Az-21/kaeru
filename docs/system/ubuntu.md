@@ -35,6 +35,9 @@ sudo nala update && sudo nala install wezterm
 # Zsh Code Editor
 curl -f https://zed.dev/install.sh | sh
 
+# Fast Node Manager
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
+
 # GitHub Desktop Plus
 sudo curl https://gpg.polrivero.com/public.key | sudo gpg --dearmor -o /usr/share/keyrings/polrivero.gpg
 echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/polrivero.gpg] https://deb.github-desktop.polrivero.com/ stable main" | sudo tee /etc/apt/sources.list.d/github-desktop-plus.list
