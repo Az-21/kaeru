@@ -12,6 +12,7 @@ sudo apt update && sudo apt upgrade && sudo apt install nala
 
 ```zsh
 sudo nala install \
+  build-essential \
   curl \
   git \
   unzip \
