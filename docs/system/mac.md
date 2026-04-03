@@ -12,7 +12,6 @@ icon: simple/apple
 
 ```zsh
 brew install \
-  fnm \
   git \
   mise \
   zsh-autosuggestions \

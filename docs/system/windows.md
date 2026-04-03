@@ -20,7 +20,6 @@ winget install `
   Microsoft.VisualStudio.Community `
   Microsoft.VisualStudioCode `
   polrivero.GitHubDesktopPlus `
-  Schniz.fnm `
   wez.wezterm `
   ZedIndustries.Zed
 ```
