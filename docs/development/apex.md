@@ -24,12 +24,26 @@ chezmoi re-add ~/.config/some-config-file
 chezmoi diff
 ```
 
+## Git
+
+```zsh
+# Private, non-tracked gitignore
+vi .git/info/exclude
+```
+
 ## Mise
 
 ```zsh
+# Common dev tools (unpinned)
+mise use --global tool@latest
+
 # Upgrade all tools
 mise upgrade
 
 # Remove tools which are no longer listed in ~/.config/mise/config.toml
 mise prune
+
+# Pinned version (local)
+# cd into project to create a project specific mise.toml | Mise automatically switches on cd
+mise use node@20
 ```
