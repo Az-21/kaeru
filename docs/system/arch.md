@@ -81,7 +81,7 @@ ssh-add ~/.ssh/id_ed25519 < /dev/null
 
 !!! warning
 
-    `ssh-add ~/.ssh/id_ed25519` you have added the correct SSH key.
+    `ssh-add ~/.ssh/id_ed25519` is just an example. Ensure you have added the correct SSH key.
 
 ```zsh
 chmod +x ~/.local/bin/ssh-add-kwallet.sh
