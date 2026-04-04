@@ -60,6 +60,10 @@ sudo nala update && sudo nala upgrade && sudo nala autoremove && mise upgrade
 
 ## Dotfiles
 
+!!! tip
+
+    Run `mise doctor` and fix any issues before running the following commands.
+
 ```zsh
 mise use -g chezmoi@latest
 chezmoi init Az-21

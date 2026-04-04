@@ -30,6 +30,10 @@ winget upgrade --all && mise upgrade
 
 ## Dotfiles
 
+!!! tip
+
+    Run `mise doctor` and fix any issues before running the following commands.
+
 ```powershell
 mise use -g chezmoi@latest
 chezmoi init Az-21

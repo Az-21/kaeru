@@ -33,6 +33,10 @@ brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cle
 
 ## Dotfiles
 
+!!! tip
+
+    Run `mise doctor` and fix any issues before running the following commands.
+
 ```zsh
 mise use -g chezmoi@latest
 chezmoi init Az-21
