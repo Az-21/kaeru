@@ -29,6 +29,8 @@ yay -S --needed \
   extra/zsh \
   extra/zsh-autosuggestions \
   extra/zsh-syntax-highlighting
+
+chsh -s $(which zsh)
 ```
 
 ```
