@@ -2,33 +2,71 @@
 icon: lucide/rocket
 ---
 
-# Get started
+# Welcome
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+Welcome to my central knowledge base! This site serves as the definitive source for my documentation, references, and system configurations.
 
-## Commands
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-- [`zensical new`][new] - Create a new project
-- [`zensical serve`][serve] - Start local web server
-- [`zensical build`][build] - Build your site
-
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
-
-## Examples
+## Quick Zensical Reference
 
 ### Admonitions
 
 > Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
 
+#### General Info
+
 !!! note
 
-    This is a **note** admonition. Use it to provide helpful information.
+    Provide helpful, persistent information that doesn't necessarily belong in the main text.
+
+!!! info
+
+    Highlighting facts or additional context that adds value to the reader.
+
+!!! tip
+
+    Pro-tips, shortcuts, or clever ways to achieve a goal.
+
+!!! question
+
+    FAQs, things to consider, or when prompting the user for input.
+
+#### Validation
+
+!!! success
+
+    Indicate a completed task, a positive outcome, or a "correct" state.
+
+!!! example
+
+    Concrete illustrations or code snippets that clarify a concept.
+
+!!! abstract
+
+    Summaries, TL;DRs, or an overview of the content to follow.
+
+!!! quote
+
+    Citations, testimonials, or highlighting a specific statement.
+
+#### Warnings
 
 !!! warning
 
-    This is a **warning** admonition. Be careful!
+    Proceed with caution.
+
+!!! failure
+
+    Indicate something went wrong, an operation failed, or a negative outcome occurred.
+
+!!! bug
+
+    Document known issues, edge cases, or errors in software/logic.
+
+!!! danger
+
+    Critical warnings where data loss, security risks, or hardware damage might occur.
 
 ### Details
 
@@ -39,7 +77,7 @@ For full documentation visit [zensical.org](https://zensical.org/docs/).
     This content is hidden until you click to expand it.
     Great for FAQs or long explanations.
 
-## Code Blocks
+### Code Blocks
 
 > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
 
@@ -56,7 +94,7 @@ greet("Python")
 
 Code can also be highlighted inline: `#!python print("Hello, Python!")`.
 
-## Content tabs
+### Content tabs
 
 > Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
 
@@ -72,7 +110,7 @@ Code can also be highlighted inline: `#!python print("Hello, Python!")`.
     println!("Hello from Rust!");
     ```
 
-## Diagrams
+### Diagrams
 
 > Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
 
@@ -85,7 +123,7 @@ graph LR
   B ---->|No| E[Yay!];
 ```
 
-## Footnotes
+### Footnotes
 
 > Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
 
@@ -95,7 +133,7 @@ Hover it, to see a tooltip.
 
 [^1]: This is the footnote.
 
-## Formatting
+### Formatting
 
 > Go to [documentation](https://zensical.org/docs/authoring/formatting/)
 
@@ -106,7 +144,7 @@ Hover it, to see a tooltip.
 - A^T^A
 - ++ctrl+alt+del++
 
-## Icons, Emojis
+### Icons, Emojis
 
 > Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
 
@@ -116,7 +154,7 @@ Hover it, to see a tooltip.
 - :memo: `:memo:`
 - :eyes: `:eyes:`
 
-## Maths
+### Maths
 
 > Go to [documentation](https://zensical.org/docs/authoring/math/)
 
@@ -154,7 +192,7 @@ simple starter pages.
   })
 </script>
 
-## Task Lists
+### Task Lists
 
 > Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
 
@@ -163,7 +201,7 @@ simple starter pages.
 - [x] Write amazing documentation
 - [ ] Deploy anywhere
 
-## Tooltips
+### Tooltips
 
 > Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
 
