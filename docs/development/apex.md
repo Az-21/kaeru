@@ -31,6 +31,11 @@ chezmoi diff
 vi .git/info/exclude
 ```
 
+```zsh
+# Skip tracking of already commited files
+git update-index --assume-unchanged {file}
+```
+
 ## Mise
 
 ```zsh
