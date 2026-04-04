@@ -4,6 +4,10 @@ icon: simple/ubuntu
 
 # Ubuntu
 
+!!! danger
+
+    Ubuntu is absolute garbage. Package management situation is insane. It lacks core system utilities like clipboard history and screenshot markup. Canonical is still pushing Snap. GNOME is noticeably behind KDE.
+
 ## Initial Setup
 
 ```zsh
