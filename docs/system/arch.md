@@ -94,3 +94,13 @@ All the script and files are now configured. Now, we need to add the script to a
 1. KDE System Settings > Autostart
 2. Add > Add Login Script
 3. Browse to and select `~/.local/bin/ssh-add-kwallet.sh`.
+
+## Indexing
+
+!!! abstract
+
+    To keep system snappy, I prefer to tone down the indexing. Following instructions are for KDE.
+
+    1. Search "File Search" in Application Launcher (Start Menu)
+    2. Change data to index option to "File names only"
+    3. Add an exclusion for the development folder (e.g., `~/Dev`)
