@@ -1,5 +1,5 @@
 ---
-icon: lucide/gamepad-2
+icon: lucide/crosshair
 ---
 
 # Team Fortress 2
