@@ -17,9 +17,15 @@ MY_VAR_1=value1
 MY_VAR_2=value2
 ```
 
-!!! tip "Applying Changes"
+!!! note "Applying Changes"
 
     Changes in `environment.d` require you to log out and log back in, or restart the user systemd instance.
+
+!!! tip "Splitting Config Files"
+
+    We can split configuration across multiple `.conf` files under `~/.config/environment.d/`, which makes it easy to keep separate files for different providers (e.g., `llm-anthropic.conf`, `llm-google.conf`).
+    
+    A nice side effect of this approach is that configs can be disabled without commenting out individual key-value pairs. Renaming a file's extension from `.conf` to anything else (e.g. `.conf.disable`) causes systemd to skip it entirely.
 
 ### System
 
