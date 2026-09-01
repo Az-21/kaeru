@@ -12,9 +12,9 @@ icon: simple/apple
 
 ```zsh
 brew install \
+  desktop-plus/tap/desktop-plus \
   git \
   mise \
-  desktop-plus/tap/desktop-plus \
   zsh-autosuggestions \
   zsh-syntax-highlighting
 
