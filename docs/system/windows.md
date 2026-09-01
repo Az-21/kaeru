@@ -59,7 +59,7 @@ Get-Service ssh-agent
 
 ```powershell
 # Use Windows SSH client
-$sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source; if ($sshPath) { [System.Environment]::SetEnvironmentVariable("GIT_SSH_COMMAND", $sshPath, [System.EnvironmentVariableTarget]::User); Write-Host "[ OK ] $sshPath is now the default SSH client" -ForegroundColor Green; Write-Host "NOTE: Restart terminal/apps for changes to take effect." -ForegroundColor Yellow } else { Write-Host "Error: ssh not found" -ForegroundColor Red }
+if ($sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source) { git config --global core.sshCommand "$($sshPath -replace '\\', '/')"; Write-Host "[ OK ] $sshPath is now the default SSH client" -ForegroundColor Green; Write-Host "NOTE: Restart terminal/apps for changes to take effect." -ForegroundColor Yellow } else { Write-Host "Error: ssh not found" -ForegroundColor Red }
 ```
 
 ```powershell
