@@ -13,11 +13,11 @@ yay -Y --gendb && yay -Syu --devel && yay -Y --devel --save
 
 ```zsh
 yay -S --needed \
-  aur/github-desktop-plus-bin \
+  aur/desktop-plus-bin \
   aur/microsoft-edge-stable-bin \
   core/curl \
-  extra/code \
   extra/chromium \
+  extra/firefox \
   extra/git \
   extra/kdeconnect \
   extra/ksshaskpass \

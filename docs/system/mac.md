@@ -19,12 +19,11 @@ brew install \
 
 brew install --cask \
   steam \
-  visual-studio-code \
   wezterm \
   zed
 
 brew install \
-  pol-rivero/tap/github-desktop-plus
+  desktop-plus/tap/desktop-plus
 ```
 
 ```zsh
