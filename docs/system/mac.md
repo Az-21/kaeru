@@ -14,16 +14,13 @@ icon: simple/apple
 brew install \
   git \
   mise \
+  desktop-plus/tap/desktop-plus \
   zsh-autosuggestions \
   zsh-syntax-highlighting
 
 brew install --cask \
-  steam \
   wezterm \
   zed
-
-brew install \
-  desktop-plus/tap/desktop-plus
 ```
 
 ```zsh
