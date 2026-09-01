@@ -4,6 +4,10 @@ icon: lucide/key-round
 
 # GPG
 
+!!! tip
+
+    [SSH](./ssh.md) is superior to GPG in most ways. It is also more convenient and comes pre-included in all major OSes.
+
 ## Generation
 
 ### Generate Key
