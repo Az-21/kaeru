@@ -46,12 +46,26 @@ mise upgrade
 ```powershell
 # Run on startup
 Get-Service ssh-agent | Set-Service -StartupType Automatic
+```
 
+```powershell
 # Start in current run (one-time, won't need after restarting once)
 Start-Service ssh-agent
+```
 
+```powershell
 # Verify
 Get-Service ssh-agent
+```
+
+```powershell
+# Use Windows SSH client
+$sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source; if ($sshPath) { [System.Environment]::SetEnvironmentVariable("GIT_SSH_COMMAND", $sshPath, [System.EnvironmentVariableTarget]::User); Write-Host "[ OK ] $sshPath is now the default SSH client" -ForegroundColor Green; Write-Host "NOTE: Restart terminal/apps for changes to take effect." -ForegroundColor Yellow } else { Write-Host "Error: ssh not found" -ForegroundColor Red }
+```
+
+```powershell
+# Confirm default SSH client after restating terminal/app
+[System.Environment]::GetEnvironmentVariable("GIT_SSH_COMMAND", [System.EnvironmentVariableTarget]::User)
 ```
 
 ## Misc
