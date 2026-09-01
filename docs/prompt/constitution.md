@@ -1,4 +1,8 @@
-# Speckit Constitution
+---
+icon: lucide/scale
+---
+
+# Constitution
 
 ## Rust
 
