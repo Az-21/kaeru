@@ -12,14 +12,13 @@ winget upgrade --all
 
 ```powershell
 winget install `
+  DesktopPlus.DesktopPlus `
   Git.Git `
   jdx.mise `
   M2Team.NanaZip `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
-  Microsoft.VisualStudio.Community `
-  Microsoft.VisualStudioCode `
-  polrivero.GitHubDesktopPlus `
+  Microsoft.VisualStudio.BuildTools `
   wez.wezterm `
   ZedIndustries.Zed
 ```
