@@ -1,3 +1,7 @@
+---
+icon: lucide/file-code-corner
+---
+
 # Cheat Sheet
 
 ## Git + RipGrep Selective Search

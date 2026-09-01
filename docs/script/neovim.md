@@ -1,3 +1,7 @@
+---
+icon: simple/neovim
+---
+
 # Neovim
 
 ## Installation
