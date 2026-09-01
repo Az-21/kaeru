@@ -24,31 +24,21 @@ chezmoi re-add ~/.config/some-config-file
 chezmoi diff
 ```
 
-## Git
-
-```zsh
-# Private, non-tracked gitignore
-vi .git/info/exclude
-```
-
-```zsh
-# Skip tracking of already commited files
-git update-index --assume-unchanged {file}
-```
-
 ## Mise
 
 ```zsh
-# Common dev tools (unpinned)
+# Global tool usage
 mise use --global tool@latest
+
+# Local tool usage (`cd` into project first)
+mise use tool@24
 
 # Upgrade all tools
 mise upgrade
 
+# Upgrade all tools bypassing release age safety
+mise upgrade --minimum-release-age=0s
+
 # Remove tools which are no longer listed in ~/.config/mise/config.toml
 mise prune
-
-# Pinned version (local)
-# cd into project to create a project specific mise.toml | Mise automatically switches on cd
-mise use node@20
 ```
