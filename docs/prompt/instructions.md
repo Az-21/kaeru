@@ -9,6 +9,8 @@ Re-usable instructions for LLMs.
 ## Markdown Writing Guidelines
 
 ```md
+## Markdown Writing Guidelines
+
 ### Heading Capitalization
 
 - **Rule:** Use Title Case (Chicago/AP style) for all heading levels (`#` through `######`).
