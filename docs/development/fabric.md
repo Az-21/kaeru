@@ -70,6 +70,5 @@ df: DataFrame = (
 ### Save
 
 ```py
-output_path: str = generate_lakehouse_path("fabric_TableName")
-aggregated_df.write.format("delta").mode("overwrite").save(output_path)
+aggregated_df.write.format("delta").mode("overwrite").save(generate_lakehouse_path("fabric_TableName"))
 ```
