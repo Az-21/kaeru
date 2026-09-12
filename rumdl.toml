@@ -1,0 +1,5 @@
+[global]
+disable = [
+  "MD013", # Line length
+  "MD046", # Code block style (4 spaces) | Disabled to support Zensical admonitions
+]
