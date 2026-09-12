@@ -4,7 +4,7 @@ icon: lucide/database
 
 # Fabric
 
-### Starter Template
+## Starter Template
 
 ```py
 from pyspark.sql import SparkSession, Row, DataFrame, functions as F
@@ -13,14 +13,14 @@ from pyspark.errors import AnalysisException
 DEBUG: bool = True
 ```
 
-### Lakehouse Table
+## Lakehouse Table
 
 ```py
 def generate_lakehouse_path(table_name: str) -> str:
   return f"Tables/dbo/{table_name}"
 ```
 
-### Table with Specific Columns
+## Table with Specific Columns
 
 ```py
 column_mapping: dict[str, str] = {
@@ -42,7 +42,7 @@ if DEBUG:
   display(df)
 ```
 
-### Transform
+## Transform
 
 ```py
 df: DataFrame = (
@@ -54,7 +54,7 @@ df: DataFrame = (
 )
 ```
 
-### Aggregate
+## Aggregate
 
 ```py
 df: DataFrame = (
@@ -67,7 +67,7 @@ df: DataFrame = (
 )
 ```
 
-### Save
+## Save
 
 ```py
 aggregated_df.write.format("delta").mode("overwrite").save(generate_lakehouse_path("fabric_TableName"))

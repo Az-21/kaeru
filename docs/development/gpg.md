@@ -64,7 +64,7 @@ gpg --export --armor λ | pbcopy
 
 ### Create Backup
 
-```
+```zsh
 gpg --export --armor λ > GitHub-CommitSigningKey-Public.asc
 gpg --export-secret-keys --armor λ > GitHub-CommitSigningKey-Private.asc
 ```

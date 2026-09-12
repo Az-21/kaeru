@@ -34,7 +34,7 @@ yay -S --needed \
 chsh -s $(which zsh)
 ```
 
-```
+```zsh
 yay && mise upgrade
 ```
 

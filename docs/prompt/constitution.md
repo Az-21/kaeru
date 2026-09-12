@@ -6,4 +6,4 @@ icon: lucide/scale
 
 ## Rust
 
-:simple-github: https://github.com/leonardomso/rust-skills
+:simple-github: <https://github.com/leonardomso/rust-skills>
