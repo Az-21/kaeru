@@ -35,7 +35,7 @@ chsh -s $(which zsh)
 ```
 
 ```zsh
-yay && mise upgrade
+yay && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
 ## Dotfiles

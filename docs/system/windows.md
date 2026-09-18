@@ -24,7 +24,7 @@ winget install `
 ```
 
 ```powershell
-winget upgrade --all && mise upgrade
+winget upgrade --all && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
 ## Dotfiles

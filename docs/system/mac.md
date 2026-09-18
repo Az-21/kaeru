@@ -24,7 +24,7 @@ brew install --cask \
 ```
 
 ```zsh
-brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cleanup && mise upgrade
+brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cleanup && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
 ## Dotfiles
