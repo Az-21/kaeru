@@ -6,7 +6,7 @@ icon: lucide/key-round
 
 !!! tip
 
-    [SSH](./ssh.md) is superior to GPG in most ways. It is also more convenient and comes pre-included in all major OSes.
+    [SSH](../ssh.md) is superior to GPG in most ways. It is also more convenient and comes pre-included in all major OSes.
 
 ## Generation
 
@@ -53,10 +53,11 @@ git config --global commit.gpgsign true
 ### Get Public Signature
 
 ```sh
-# Windows PowerShell
+# :: powershell
 gpg --export --armor λ | Set-Clipboard
 
-# macOS (zsh or Bash)
+# :: bash
+# :: zsh
 gpg --export --armor λ | pbcopy
 ```
 
