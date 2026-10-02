@@ -6,12 +6,12 @@ icon: simple/archlinux
 
 ## Initial Setup
 
-```zsh
+```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Y --gendb && yay -Syu --devel && yay -Y --devel --save
 ```
 
-```zsh
+```sh
 yay -S --needed \
   aur/desktop-plus-bin \
   aur/microsoft-edge-stable-bin \
@@ -34,7 +34,7 @@ yay -S --needed \
 chsh -s $(which zsh)
 ```
 
-```zsh
+```sh
 yay && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
@@ -44,7 +44,7 @@ yay && mise upgrade --minimum-release-age=0s && mise prune -y
 
     Run `mise doctor` and fix any issues before running the following commands.
 
-```zsh
+```sh
 mise use -g chezmoi@latest
 chezmoi init Az-21
 chezmoi apply
@@ -57,11 +57,11 @@ mise upgrade
 
     Hooking into KDE’s systemd boot process, we can ensure that SSH agent starts on boot, uses login password to unlock the SSH key, and makes it available globally to both terminal and GUI apps.
 
-```zsh
+```sh
 systemctl --user enable --now ssh-agent.service
 ```
 
-```zsh
+```sh
 mkdir -p ~/.config/environment.d
 nano ~/.config/environment.d/ssh.conf
 ```
@@ -72,7 +72,7 @@ SSH_ASKPASS="/usr/bin/ksshaskpass"
 SSH_ASKPASS_REQUIRE="prefer"
 ```
 
-```zsh
+```sh
 mkdir -p ~/.local/bin
 nano ~/.local/bin/ssh-add-kwallet.sh
 ```
@@ -86,7 +86,7 @@ ssh-add ~/.ssh/id_ed25519 < /dev/null
 
     `ssh-add ~/.ssh/id_ed25519` is just an example. Ensure you have added the correct SSH key.
 
-```zsh
+```sh
 chmod +x ~/.local/bin/ssh-add-kwallet.sh
 ```
 

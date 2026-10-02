@@ -6,7 +6,7 @@ icon: material/shield-key
 
 ## Key Generation
 
-```bash title="Generate a secure key"
+```sh title="Generate a secure key"
 ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519_personal
 #          -t algo    -C comment (email)          -f filename
 ```
@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519_personal
 
 Organize your projects into subdirectories (e.g., `~/dev/personal` and `~/dev/work`) to trigger automatic identity switching.
 
-```bash title="Prepare configuration directory"
+```sh title="Prepare configuration directory"
 mkdir --parents ~/.config/git/
 ```
 
@@ -72,7 +72,7 @@ The files inside `~/.config/git/` will override your global settings automatical
 
 ## Verification
 
-```bash title="Testing the setup"
+```sh title="Testing the setup"
 cd ~/dev/work/my-project
 
 # Verify identity

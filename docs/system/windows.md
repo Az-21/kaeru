@@ -6,11 +6,11 @@ icon: lucide/monitor
 
 ## Initial Setup
 
-```powershell
+```sh
 winget upgrade --all
 ```
 
-```powershell
+```sh
 winget install `
   DesktopPlus.DesktopPlus `
   Git.Git `
@@ -23,7 +23,7 @@ winget install `
   ZedIndustries.Zed
 ```
 
-```powershell
+```sh
 winget upgrade --all && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
@@ -33,7 +33,7 @@ winget upgrade --all && mise upgrade --minimum-release-age=0s && mise prune -y
 
     Run `mise doctor` and fix any issues before running the following commands.
 
-```powershell
+```sh
 mise use -g chezmoi@latest
 chezmoi init Az-21
 chezmoi apply
@@ -42,27 +42,27 @@ mise upgrade
 
 ## SSH Setup
 
-```powershell
+```sh
 # Run on startup
 Get-Service ssh-agent | Set-Service -StartupType Automatic
 ```
 
-```powershell
+```sh
 # Start in current run (one-time, won't need after restarting once)
 Start-Service ssh-agent
 ```
 
-```powershell
+```sh
 # Verify
 Get-Service ssh-agent
 ```
 
-```powershell
+```sh
 # Use Windows SSH client
 if ($sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source) { [System.Environment]::SetEnvironmentVariable("GIT_SSH_COMMAND", ($sshPath -replace '\\', '/'), [System.EnvironmentVariableTarget]::User); Write-Host "[ OK ] $sshPath is now the default SSH client" -ForegroundColor Green; Write-Host "NOTE: Restart terminal/apps for changes to take effect." -ForegroundColor Yellow } else { Write-Host "Error: ssh not found" -ForegroundColor Red }
 ```
 
-```powershell
+```sh
 # Confirm default SSH client after restating terminal/app
 [System.Environment]::GetEnvironmentVariable("GIT_SSH_COMMAND", [System.EnvironmentVariableTarget]::User)
 ```
@@ -75,7 +75,7 @@ if ($sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source) { [System
 
 Use this as the local path when cloning a repo.
 
-```bash
+```sh
 # \\wsl.localhost\{DISTRO}\home\{User}\Code\{Orgnization}\{Repo}
 \\wsl.localhost\Debian\home\Az21\Code\Az-21\{Repo}
 ```
@@ -84,7 +84,7 @@ Use this as the local path when cloning a repo.
 
     GitHub Desktop uses the `git` from Windows. To make local (repo level) changes to fields like user name, user email, and signing key, run the git command using `git.exe`.
 
-    ```bash
+    ```sh
     # ~/some-repo
     git.exe config --local user.email
     ```

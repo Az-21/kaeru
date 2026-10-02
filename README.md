@@ -2,6 +2,6 @@
 
 Config, notes, and everything else.
 
-```zsh
+```sh
 uv run zensical serve
 ```

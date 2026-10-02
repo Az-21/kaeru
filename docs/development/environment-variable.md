@@ -24,7 +24,7 @@ MY_VAR_2=value2
 !!! tip "Splitting Config Files"
 
     We can split configuration across multiple `.conf` files under `~/.config/environment.d/`, which makes it easy to keep separate files for different providers (e.g., `llm-anthropic.conf`, `llm-google.conf`).
-    
+
     A nice side effect of this approach is that configs can be disabled without commenting out individual key-value pairs. Renaming a file's extension from `.conf` to anything else (e.g. `.conf.disable`) causes systemd to skip it entirely.
 
 ### System
@@ -38,11 +38,11 @@ MY_SYS_VAR_2=value2
 
 ### Add a New Variable
 
-```powershell title="User variable"
+```sh title="User variable"
 [System.Environment]::SetEnvironmentVariable("VAR_NAME", "Value", [System.EnvironmentVariableTarget]::User)
 ```
 
-```powershell title="System variable"
+```sh title="System variable"
 [System.Environment]::SetEnvironmentVariable("VAR_NAME", "Value", [System.EnvironmentVariableTarget]::Machine)
 ```
 
@@ -54,7 +54,7 @@ PowerShell does not have a built-in `cmdlet` to safely append to the `PATH` with
 
     Add the following function to your `$PROFILE` so it is always available in your PowerShell sessions.
 
-    ```powershell
+    ```sh
     function Add-Path {
         param(
             [Parameter(Mandatory=$true)]
@@ -71,10 +71,10 @@ PowerShell does not have a built-in `cmdlet` to safely append to the `PATH` with
 
     !!! example "Usage"
 
-        ```powershell
+        ```sh
         Add-Path -NewPath "C:\full\path\here" -Scope User
         ```
 
-        ```powershell
+        ```sh
         Add-Path -NewPath "C:\full\path\here" -Scope Machine
         ```

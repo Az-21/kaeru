@@ -10,12 +10,12 @@ icon: lucide/hard-drive
 
 ## Start Diskpart Utility
 
-```cmd
+```sh
 ::# PowerShell or CMD
 diskpart
 ```
 
-```cmd
+```sh
 :: Get all connected disks
 list disk
 ```
@@ -41,37 +41,37 @@ list disk
 
     **You will brick your device if you select the disk where OS is installed.**
 
-```cmd
+```sh
 :: Select disk to work on
 select disk 999
 ::          ^ Replace this with your flashdrive's Disk ID
 :: Again, you will brick your device if you select the disk where OS is installed
 ```
 
-```cmd
+```sh
 clean
 ```
 
-```cmd
+```sh
 convert mbr
 ```
 
-```cmd
+```sh
 create partition primary
 ```
 
-```cmd
+```sh
 select partition 1
 ```
 
-```cmd
+```sh
 active
 ```
 
-```cmd
+```sh
 format fs=fat32 label=FLASHDRIVE quick
 ```
 
-```cmd
+```sh
 exit
 ```

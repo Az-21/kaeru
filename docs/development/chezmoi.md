@@ -4,7 +4,7 @@ icon: lucide/folder-sync
 
 # Chezmoi
 
-```zsh
+```sh
 # Initialize and optionally pull from GitHub user
 # ~/.local/share/chezmoi/
 chezmoi init Az-21

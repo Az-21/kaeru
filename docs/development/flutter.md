@@ -6,7 +6,7 @@ icon: lucide/smartphone
 
 ## Initialize
 
-```powershell
+```sh
 flutter create --platforms=android,windows --org az21 appname
 ```
 
@@ -16,7 +16,7 @@ flutter create --platforms=android,windows --org az21 appname
 
 ### App Name
 
-```powershell
+```sh
 ./android/app/src/main/AndroidManifest.xml
 ```
 
@@ -28,13 +28,13 @@ android:label="appname"
 
 ### Key
 
-```powershell
+```sh
 ./android/app/upload-key.jks
 ```
 
 ### Key Properties
 
-```powershell
+```sh
 ./android/key.properties
 ```
 
@@ -47,7 +47,7 @@ storePassword=hunter2
 
 ### Gradle Config
 
-```powershell
+```sh
 ./android/app/build.gradle
 ```
 

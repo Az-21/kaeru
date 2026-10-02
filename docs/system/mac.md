@@ -6,11 +6,11 @@ icon: simple/apple
 
 ## Initial Setup
 
-```zsh
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-```zsh
+```sh
 brew install \
   desktop-plus/tap/desktop-plus \
   git \
@@ -23,7 +23,7 @@ brew install --cask \
   zed
 ```
 
-```zsh
+```sh
 brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cleanup && mise upgrade --minimum-release-age=0s && mise prune -y
 ```
 
@@ -33,7 +33,7 @@ brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cle
 
     Run `mise doctor` and fix any issues before running the following commands.
 
-```zsh
+```sh
 mise use -g chezmoi@latest
 chezmoi init Az-21
 chezmoi apply

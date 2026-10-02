@@ -10,11 +10,11 @@ icon: simple/ubuntu
 
 ## Initial Setup
 
-```zsh
+```sh
 sudo apt update && sudo apt upgrade && sudo apt install nala
 ```
 
-```zsh
+```sh
 sudo nala install \
   build-essential \
   curl \
@@ -49,7 +49,7 @@ sudo nala update && sudo nala install desktop-plus
 sudo apt modernize-sources
 ```
 
-```zsh
+```sh
 sudo nala update && sudo nala upgrade && sudo nala autoremove && mise upgrade
 ```
 
@@ -59,7 +59,7 @@ sudo nala update && sudo nala upgrade && sudo nala autoremove && mise upgrade
 
     Run `mise doctor` and fix any issues before running the following commands.
 
-```zsh
+```sh
 mise use -g chezmoi@latest
 chezmoi init Az-21
 chezmoi apply
@@ -68,7 +68,7 @@ mise upgrade
 
 ## Sane Configs
 
-```zsh
+```sh
 # Center dock icons and trim for a macOS like dock
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 

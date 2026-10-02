@@ -4,7 +4,7 @@ icon: lucide/boxes
 
 # Mise
 
-```zsh
+```sh
 # Global tool usage
 mise use --global tool@latest
 
@@ -24,6 +24,6 @@ mise prune
 mise prune -y
 ```
 
-```zsh
+```sh
 mise upgrade --minimum-release-age=0s && mise prune -y
 ```
