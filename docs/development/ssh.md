@@ -28,7 +28,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519_personal
 Organize your projects into subdirectories (e.g., `~/dev/personal` and `~/dev/work`) to trigger automatic identity switching.
 
 ```sh title="Prepare configuration directory"
-mkdir --parents ~/.config/git/
+mkdir ~/.config/git/
 ```
 
 ### The Master Config (`~/.gitconfig`)

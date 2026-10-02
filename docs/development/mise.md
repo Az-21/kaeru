@@ -25,5 +25,5 @@ mise prune -y
 ```
 
 ```sh
-mise upgrade --minimum-release-age=0s && mise prune -y
+mise upgrade --minimum-release-age=0s; mise prune -y
 ```

@@ -39,10 +39,12 @@ MY_SYS_VAR_2=value2
 ### Add a New Variable
 
 ```sh title="User variable"
+# :: powershell
 [System.Environment]::SetEnvironmentVariable("VAR_NAME", "Value", [System.EnvironmentVariableTarget]::User)
 ```
 
 ```sh title="System variable"
+# :: powershell
 [System.Environment]::SetEnvironmentVariable("VAR_NAME", "Value", [System.EnvironmentVariableTarget]::Machine)
 ```
 
@@ -55,6 +57,7 @@ PowerShell does not have a built-in `cmdlet` to safely append to the `PATH` with
     Add the following function to your `$PROFILE` so it is always available in your PowerShell sessions.
 
     ```sh
+    # :: powershell
     function Add-Path {
         param(
             [Parameter(Mandatory=$true)]
@@ -72,9 +75,11 @@ PowerShell does not have a built-in `cmdlet` to safely append to the `PATH` with
     !!! example "Usage"
 
         ```sh
+        # :: powershell
         Add-Path -NewPath "C:\full\path\here" -Scope User
         ```
 
         ```sh
+        # :: powershell
         Add-Path -NewPath "C:\full\path\here" -Scope Machine
         ```

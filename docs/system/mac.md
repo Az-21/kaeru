@@ -24,6 +24,7 @@ brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cle
     Install [brew](https://brew.sh/)
 
 ```sh
+# :: zsh
 brew install \
   desktop-plus/tap/desktop-plus \
   git \

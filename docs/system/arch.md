@@ -24,6 +24,7 @@ yay && mise upgrade --minimum-release-age=0s && mise prune -y
     Install [yay](https://github.com/Jguer/yay/blob/next/README.md)
 
 ```sh
+# :: bash
 yay -S --needed \
   aur/desktop-plus-bin \
   aur/microsoft-edge-stable-bin \
@@ -56,7 +57,7 @@ systemctl --user enable --now ssh-agent.service
 ```
 
 ```sh
-mkdir -p ~/.config/environment.d
+mkdir ~/.config/environment.d
 nano ~/.config/environment.d/ssh.conf
 ```
 
@@ -67,7 +68,7 @@ SSH_ASKPASS_REQUIRE="prefer"
 ```
 
 ```sh
-mkdir -p ~/.local/bin
+mkdir ~/.local/bin
 nano ~/.local/bin/ssh-add-kwallet.sh
 ```
 

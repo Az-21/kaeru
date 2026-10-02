@@ -28,6 +28,7 @@ winget upgrade --all
 ```
 
 ```sh
+# :: powershell
 winget install `
   DesktopPlus.DesktopPlus `
   Git.Git `
