@@ -4,6 +4,18 @@ icon: material/shield-key
 
 # SSH
 
+## Quick Restore
+
+```sh
+ssh-add ~/.ssh/id_ed25519
+```
+
+!!! tip
+
+    Password managers often silently append `.txt` to exported key file. SSH key file is extensionless.
+
+---
+
 ## Key Generation
 
 ```sh title="Generate a secure key"
