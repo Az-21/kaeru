@@ -25,15 +25,24 @@ brew update && brew upgrade --greedy && brew upgrade --cask --greedy && brew cle
 
 ```sh
 # :: zsh
-brew install \
-  desktop-plus/tap/desktop-plus \
-  git \
-  mise \
-  nushell
+brew install nushell
+```
 
-brew install --cask \
-  wezterm \
+!!! tip
+
+    Start Nushell using `nu` from the default terminal for now. It will be later set as the default shell on WezTerm via dotfiles.
+
+```sh
+brew install ...[
+  desktop-plus/tap/desktop-plus
+  git
+  mise
+]
+
+brew install --cask ...[
+  wezterm
   zed
+]
 ```
 
 ## Dotfiles

@@ -29,17 +29,25 @@ winget upgrade --all
 
 ```sh
 # :: powershell
-winget install `
-  DesktopPlus.DesktopPlus `
-  Git.Git `
-  jdx.mise `
-  M2Team.NanaZip `
-  Microsoft.PowerShell `
-  Microsoft.PowerToys `
-  Microsoft.VisualStudio.BuildTools `
-  Nushell.Nushell `
-  wez.wezterm `
+winget install Nushell.Nushell
+```
+
+!!! tip
+
+    Start Nushell using `nu` from the default terminal for now. It will be later set as the default shell on WezTerm via dotfiles.
+
+```sh
+winget install ...[
+  DesktopPlus.DesktopPlus
+  Git.Git
+  jdx.mise
+  M2Team.NanaZip
+  Microsoft.PowerShell
+  Microsoft.PowerToys
+  Microsoft.VisualStudio.BuildTools
+  wez.wezterm
   ZedIndustries.Zed
+]
 ```
 
 ## Dotfiles

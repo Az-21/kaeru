@@ -25,21 +25,29 @@ yay && mise upgrade --minimum-release-age=0s && mise prune -y
 
 ```sh
 # :: bash
-yay -S --needed \
-  aur/desktop-plus-bin \
-  aur/microsoft-edge-stable-bin \
-  core/curl \
-  extra/chromium \
-  extra/firefox \
-  extra/git \
-  extra/ksshaskpass \
-  extra/kwallet-pam \
-  extra/mise \
-  extra/nushell \
-  extra/unzip \
-  extra/wezterm \
-  extra/wget \
+yay -S --needed extra/nushell
+```
+
+!!! tip
+
+    Start Nushell using `nu` from default shell for now. It will be later set as the default shell on WezTerm via dotfiles.
+
+```sh
+yay -S --needed ...[
+  aur/desktop-plus-bin
+  aur/microsoft-edge-stable-bin
+  core/curl
+  extra/chromium
+  extra/firefox
+  extra/git
+  extra/ksshaskpass
+  extra/kwallet-pam
+  extra/mise
+  extra/unzip
+  extra/wezterm
+  extra/wget
   extra/zed
+]
 ```
 
 ## Dotfiles
