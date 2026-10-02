@@ -1,5 +1,7 @@
 ---
 icon: lucide/crosshair
+hide:
+  - toc
 ---
 
 # Team Fortress 2
