@@ -17,40 +17,12 @@ git diff-tree --no-commit-id -r --name-only -z {{commit-hash}} | xargs -0 rg "se
 
 ### Move Files One Level Up
 
-=== "PowerShell"
-
-    ```powershell
-    Get-ChildItem -Path . -Directory | ForEach-Object { Get-ChildItem -Path $_.FullName | Move-Item -Destination . }
-    ```
-
-=== "Zsh"
-
-    ```zsh
-    setopt dotglob nullglob; for dir in */; do [ -d "$dir" ] && mv -- "$dir"* . 2>/dev/null; done; unsetopt dotglob nullglob
-    ```
-
-=== "Bash"
-
-    ```bash
-    shopt -s dotglob nullglob; for dir in */; do [ -d "$dir" ] && mv -- "$dir"* . 2>/dev/null; done; shopt -u dotglob nullglob
-    ```
+```nu
+let moves = (ls | where type == dir | each { |dir| ls $dir.name | get name } | flatten); $moves | each { |file| {action: "move", path: $file} } | print; if (input --default "n" "Proceed? [y/N] " | str lowercase) == "y" { $moves | each { |file| mv $file . } | ignore }
+```
 
 ### Move Files One Level Up `&&` Delete Empty Folders
 
-=== "PowerShell"
-
-    ```powershell
-    Get-ChildItem -Path . -Directory | ForEach-Object { Get-ChildItem -Path $_.FullName | Move-Item -Destination .; Remove-Item -LiteralPath $_.FullName }
-    ```
-
-=== "Zsh"
-
-    ```zsh
-    setopt dotglob nullglob; for dir in */; do [ -d "$dir" ] && mv -- "$dir"* . 2>/dev/null && rmdir -- "$dir"; done; unsetopt dotglob nullglob
-    ```
-
-=== "Bash"
-
-    ```bash
-    shopt -s dotglob nullglob; for dir in */; do [ -d "$dir" ] && mv -- "$dir"* . 2>/dev/null && rmdir -- "$dir"; done; shopt -u dotglob nullglob
-    ```
+```nu
+let dirs = (ls | where type == dir | get name); let moves = ($dirs | each { |dir| ls $dir | get name } | flatten); $moves | each { |file| {action: "move", path: $file} } | print; $dirs | each { |dir| {action: "remove", path: $dir} } | print; if (input --default "n" "Proceed? [y/N] " | str lowercase) == "y" { $moves | each { |file| mv $file . } | ignore; $dirs | each { |dir| if (ls -a $dir | is-empty) { rm $dir } } | ignore }
+```
