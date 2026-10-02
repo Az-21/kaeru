@@ -4,6 +4,23 @@ icon: lucide/monitor
 
 # Windows
 
+## Upgrade All
+
+```sh title="Admin"
+winget upgrade --all
+```
+
+```sh
+mise upgrade --minimum-release-age=0s; mise prune -y
+```
+
+```sh
+# :: powershell
+mise upgrade --minimum-release-age=0s && mise prune -y
+```
+
+---
+
 ## Initial Setup
 
 ```sh
@@ -19,75 +36,48 @@ winget install `
   Microsoft.PowerShell `
   Microsoft.PowerToys `
   Microsoft.VisualStudio.BuildTools `
+  Nushell.Nushell `
   wez.wezterm `
   ZedIndustries.Zed
 ```
 
-```sh
-winget upgrade --all && mise upgrade --minimum-release-age=0s && mise prune -y
-```
-
 ## Dotfiles
 
-!!! tip
-
-    Run `mise doctor` and fix any issues before running the following commands.
-
-```sh
-mise use -g chezmoi@latest
-chezmoi init Az-21
-chezmoi apply
-mise upgrade
-```
+[:lucide-bolt: Initialize dotfiles](../development/chezmoi.md)
 
 ## SSH Setup
 
 ```sh
+# :: powershell
 # Run on startup
 Get-Service ssh-agent | Set-Service -StartupType Automatic
 ```
 
 ```sh
+# :: powershell
 # Start in current run (one-time, won't need after restarting once)
 Start-Service ssh-agent
 ```
 
 ```sh
+# :: powershell
 # Verify
 Get-Service ssh-agent
 ```
 
 ```sh
+# :: powershell
 # Use Windows SSH client
 if ($sshPath = (Get-Command ssh -ErrorAction SilentlyContinue).Source) { [System.Environment]::SetEnvironmentVariable("GIT_SSH_COMMAND", ($sshPath -replace '\\', '/'), [System.EnvironmentVariableTarget]::User); Write-Host "[ OK ] $sshPath is now the default SSH client" -ForegroundColor Green; Write-Host "NOTE: Restart terminal/apps for changes to take effect." -ForegroundColor Yellow } else { Write-Host "Error: ssh not found" -ForegroundColor Red }
 ```
 
 ```sh
+# :: powershell
 # Confirm default SSH client after restating terminal/app
 [System.Environment]::GetEnvironmentVariable("GIT_SSH_COMMAND", [System.EnvironmentVariableTarget]::User)
 ```
 
 ## Misc
-
-### WSL
-
-#### GitHub Desktop
-
-Use this as the local path when cloning a repo.
-
-```sh
-# \\wsl.localhost\{DISTRO}\home\{User}\Code\{Orgnization}\{Repo}
-\\wsl.localhost\Debian\home\Az21\Code\Az-21\{Repo}
-```
-
-!!! tip "Windows `git` vs Linux `git`"
-
-    GitHub Desktop uses the `git` from Windows. To make local (repo level) changes to fields like user name, user email, and signing key, run the git command using `git.exe`.
-
-    ```sh
-    # ~/some-repo
-    git.exe config --local user.email
-    ```
 
 ### Taskbar Apps
 

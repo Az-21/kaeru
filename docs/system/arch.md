@@ -4,12 +4,24 @@ icon: simple/archlinux
 
 # Arch
 
-## Initial Setup
+## Upgrade All
 
 ```sh
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Y --gendb && yay -Syu --devel && yay -Y --devel --save
+yay; mise upgrade --minimum-release-age=0s; mise prune -y
 ```
+
+```sh
+# :: bash
+yay && mise upgrade --minimum-release-age=0s && mise prune -y
+```
+
+---
+
+## Initial Setup
+
+!!! important
+
+    Install [yay](https://github.com/Jguer/yay/blob/next/README.md)
 
 ```sh
 yay -S --needed \
@@ -19,37 +31,19 @@ yay -S --needed \
   extra/chromium \
   extra/firefox \
   extra/git \
-  extra/kdeconnect \
   extra/ksshaskpass \
   extra/kwallet-pam \
   extra/mise \
+  extra/nushell \
   extra/unzip \
   extra/wezterm \
   extra/wget \
-  extra/zed \
-  extra/zsh \
-  extra/zsh-autosuggestions \
-  extra/zsh-syntax-highlighting
-
-chsh -s $(which zsh)
-```
-
-```sh
-yay && mise upgrade --minimum-release-age=0s && mise prune -y
+  extra/zed
 ```
 
 ## Dotfiles
 
-!!! tip
-
-    Run `mise doctor` and fix any issues before running the following commands.
-
-```sh
-mise use -g chezmoi@latest
-chezmoi init Az-21
-chezmoi apply
-mise upgrade
-```
+[:lucide-bolt: Initialize dotfiles](../development/chezmoi.md)
 
 ### SSH
 
@@ -66,7 +60,7 @@ mkdir -p ~/.config/environment.d
 nano ~/.config/environment.d/ssh.conf
 ```
 
-```plaintext title="~/.config/environment.d/ssh.conf"
+```ini title="~/.config/environment.d/ssh.conf"
 SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 SSH_ASKPASS="/usr/bin/ksshaskpass"
 SSH_ASKPASS_REQUIRE="prefer"
@@ -77,7 +71,7 @@ mkdir -p ~/.local/bin
 nano ~/.local/bin/ssh-add-kwallet.sh
 ```
 
-```plaintext title="~/.local/bin/ssh-add-kwallet.sh"
+```sh title="~/.local/bin/ssh-add-kwallet.sh"
 #!/bin/bash
 ssh-add ~/.ssh/id_ed25519 < /dev/null
 ```
