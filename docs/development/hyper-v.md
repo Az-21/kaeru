@@ -1,3 +1,7 @@
+---
+icon: lucide/picture-in-picture-2
+---
+
 # Hyper-V
 
 ## Tips
