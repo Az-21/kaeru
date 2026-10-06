@@ -33,18 +33,26 @@ yay && mise upgrade --minimum-release-age=0s && mise prune -y
 
     This guide goes over installing these regardless, this is just a time saver.
 
-!!! important
+### 1. Install `yay`
 
-    Install [yay](https://github.com/Jguer/yay/blob/next/README.md)
+Follow instructions on <https://github.com/Jguer/yay/blob/next/README.md> to install `yay` or `yay-bin`.
+
+!!! tip
+
+    Restart terminal, run `yay`, and `reboot` to ensure we're working with the latest core updates.
+
+### 2. Install `nushell`
 
 ```sh
 # :: bash
 yay -S --needed extra/nushell
 ```
 
-!!! tip
+!!! important
 
-    Start Nushell using `nu` from the default terminal for now. It will be later set as the default shell on WezTerm via dotfiles.
+    Following commands are written for `Nushell`. Activate using `nu`.
+
+### 3. Install Apps and Utils
 
 ```sh
 yay -S --needed ...[
@@ -67,11 +75,11 @@ yay -S --needed ...[
 ]
 ```
 
-## Dotfiles
+### 4. Sync Dotfiles
 
 [:lucide-bolt: Initialize dotfiles](../development/chezmoi.md)
 
-### SSH
+## SSH
 
 !!! abstract
 
