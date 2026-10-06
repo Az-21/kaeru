@@ -19,6 +19,20 @@ yay && mise upgrade --minimum-release-age=0s && mise prune -y
 
 ## Initial Setup
 
+!!! note
+
+    This guide is intended for -- and assumes -- Arch KDE with `plasma-meta` as base.
+
+!!! tip
+
+    For a better starting experience, install the following apps **during** `archinstall`.
+
+    - `extra/chromium`
+    - `extra/wezterm`
+    - `extra/nushell`
+
+    This guide goes over installing these regardless, this is just a time saver.
+
 !!! important
 
     Install [yay](https://github.com/Jguer/yay/blob/next/README.md)
@@ -30,19 +44,22 @@ yay -S --needed extra/nushell
 
 !!! tip
 
-    Start Nushell using `nu` from default shell for now. It will be later set as the default shell on WezTerm via dotfiles.
+    Start Nushell using `nu` from the default terminal for now. It will be later set as the default shell on WezTerm via dotfiles.
 
 ```sh
 yay -S --needed ...[
   aur/desktop-plus-bin
   aur/microsoft-edge-stable-bin
   core/curl
+  extra/ark
   extra/chromium
-  extra/firefox
+  extra/dolphin
   extra/git
+  extra/gwenview
   extra/ksshaskpass
   extra/kwallet-pam
   extra/mise
+  extra/spectacle
   extra/unzip
   extra/wezterm
   extra/wget
